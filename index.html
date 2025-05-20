@@ -1,0 +1,97 @@
+<HTML>
+
+<head>
+      <style type="text/css">
+            @font-face {
+                  font-family: "OldLondon";
+                  src: url("OldLondon.ttf");
+            }
+
+
+            * {
+                  color: gold;
+            }
+
+
+            body {
+                  display: flex;
+                  flex: 1;
+                  flex-direction: column;
+                  align-items: center;
+                  padding-top: 15px;
+                  background-image: url("background.jpg");
+                  background-size: 100%;
+                  background-repeat: no-repeat;
+            }
+
+            h1 {
+                  font-size: 56pt;
+                  color: gold;
+                  font-family: "OldLondon";
+            }
+
+            label {
+                  color: gold;
+            }
+
+            select {
+                  background-color: darkblue;
+                  border: 3px;
+            }
+
+            select:hover {
+                  background-color: darkblue;
+            }
+
+            button {
+                  background-color: darkblue;
+                  border: 2px;
+            }
+
+            button:hover {
+                  background-color: blue;
+            }
+      </style>
+
+</head>
+
+<body>
+      <h1>Floriography</h1>
+      <div>
+            <label for="flowers">Choose a flower:</label>
+            <select name="flowers" id="flowers"></select>
+            <button>SHARE</button>
+      </div>
+</body>
+
+<script type="text/javascript">
+      const JSON = [
+            {
+                  "name": "Rose",
+                  "meaning": "Test Text meaning"
+            }, {
+                  "name": "Rose",
+                  "meaning": "Test Text meaning"
+            }, {
+                  "name": "Rose",
+                  "meaning": "Test Text meaning"
+            }, {
+                  "name": "Rose",
+                  "meaning": "Test Text meaning"
+            }
+      ]
+
+      const flowerSelect = document.getElementById("flowers");
+
+      JSON.forEach(element => {
+            let child = document.createElement('option');
+            child.setAttribute("value", element.name);
+            child.innerText = element.name;
+            flowerSelect.append(child)
+      });
+
+
+      const urlID = new URLSearchParams(window.location.search).get('id')
+</script>
+
+</HTML>
