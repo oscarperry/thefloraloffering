@@ -60,7 +60,7 @@
       <div>
             <label for="flowers">Choose a flower:</label>
             <select name="flowers" id="flowers"></select>
-            <button>SHARE</button>
+            <button id="ShareButton">SHARE</button>
       </div>
 </body>
 
@@ -92,6 +92,21 @@
 
 
       const urlID = new URLSearchParams(window.location.search).get('id')
+
+      document.getElementById("ShareButton").addEventListener('click', async () => {
+            if (navigator.share) {
+                  try {
+                        await navigator.share({ url: "https://ryan-esdale.github.io/floriography/", text: "Test Text", title: "Floriography" });
+                  } catch (err) {
+                        alert(err)
+                        console.error('Error sharing content:', err);
+                  }
+            } else {
+                  // Fallback for browsers that do not support the Web Share API
+                  alert('Sharing is not supported on this device. Link copied to clipboard.');
+                  navigator.clipboard.writeText("Test text goes here");
+            }
+      })
 </script>
 
 </HTML>
