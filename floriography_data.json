@@ -1,0 +1,497 @@
+[
+    {
+        "name": "Acacia",
+        "meaning": "Friendship",
+        "quote": "Old friends, like old swords, still are trusted best.\nWebster."
+    },
+    {
+        "name": "Acanthus",
+        "meaning": "The Arts",
+        "quote": "Of the dear star-light of thy haunting eyes!\nThey called me vain, some mad\u2014I heeded not\nBulwer."
+    },
+    {
+        "name": "Almond Blossom",
+        "meaning": "Indescretion",
+        "quote": "Alas! he only shows the truth\nOf all that I was told in youth.\nBarry Cornwall."
+    },
+    {
+        "name": "Aloe",
+        "meaning": "Grief",
+        "quote": "Sister Sorrow! sit beside me,\nOr, if I must wander, guide me:\nR. M. Milne"
+    },
+    {
+        "name": "Althea",
+        "meaning": "Consumed by love",
+        "quote": "With thee conversing, I forget all time;\nAll seasons and their change, all please alike.\nMilton."
+    },
+    {
+        "name": "Amaranth",
+        "meaning": "Immortality",
+        "quote": "Beyond our vision lie\nEternal realms, ineffably sublime\nAnd beautiful.\nMacKellar."
+    },
+    {
+        "name": "Anemone",
+        "meaning": "Forsaken",
+        "quote": "\u2019Twas all I had to offer thee,\nLove in its own simplicity.\nWillis."
+    },
+    {
+        "name": "Ash Tree",
+        "meaning": "Grandeur",
+        "quote": "Wisdom enshrined in beauty\u2014Oh! how high\nThe order of that loveliness.\nPercival."
+    },
+    {
+        "name": "Box",
+        "meaning": "Stoicism",
+        "quote": "Like Box, that guards the flowerless bed,\nAnd brighter from the contrast seems.\nMrs. Hale."
+    },
+    {
+        "name": "Broom",
+        "meaning": "Humility",
+        "quote": "Here is a precious jewel I have found\nAmong the filth and rubbish of the world.\nLongfellow."
+    },
+    {
+        "name": "Cactus",
+        "meaning": "Ardent Love",
+        "quote": "In light o\u2019er heaven\u2019s deep waveless sea,\nAnd stars are forth like blessed things,\nI think of thee\u2014I think of thee.\nG. W. Prentice."
+    },
+    {
+        "name": "Camellia Japonica",
+        "meaning": "Modest Merit",
+        "quote": "Whose every glance reflects the gem enshrined,\nWorthy a form so fair; the diamond of the mind.\nAnon."
+    },
+    {
+        "name": "Chamomile",
+        "meaning": "Energy in Adversity",
+        "quote": "Undaunted by your wiles,\nDraws from its own nobility\nIts high-born smiles.\nMrs. Hale."
+    },
+    {
+        "name": "China Aster",
+        "meaning": "Variety",
+        "quote": "And life, so varied, hath more loveliness\nIn one day than a creeping century\nOf sameness.\nBailey."
+    },
+    {
+        "name": "Citron",
+        "meaning": "Estrangement",
+        "quote": "So the remembrance of my former love\nIs by a newer object quite forgotten.\nShakspeare."
+    },
+    {
+        "name": "Common Thistle",
+        "meaning": "Misanthropy",
+        "quote": "Thy anger, unappeasable, still rages\nEternal tempest never to be calm.\nMilton."
+    },
+    {
+        "name": "Corn",
+        "meaning": "Riches",
+        "quote": "The sight of our treasure shall yield us great pleasure,\nWe\u2019ll count it, and chink it, and jingle it well.\nDr. Franklin."
+    },
+    {
+        "name": "Cowslip",
+        "meaning": "Pensiveness",
+        "quote": "Eyes that all soft and tender seem,\nAnd kind affections round them beam,\nBut most of all on me.\nFrisbie."
+    },
+    {
+        "name": "Coxcomb",
+        "meaning": "Singularity",
+        "quote": "He ne\u2019er presumed to make an error clearer;\nIn short, there never was a better hearer.\nByron."
+    },
+    {
+        "name": "Cranberry",
+        "meaning": "Cure for the heartache",
+        "quote": "Heaven gives nothing sweeter to the mind\nThan memories of the acts that bless our human kind.\nMacKellar."
+    },
+    {
+        "name": "Crocus",
+        "meaning": "Youth",
+        "quote": "Life went a Maying\nWith Nature, Hope, and Poesy,\nWhen I was young!\nColeridge."
+    },
+    {
+        "name": "Cypress",
+        "meaning": "Mourning",
+        "quote": "Oh, wo, deep wo to earthly love\u2019s fond trust,\nWhen all it once has worshipped lies in dust!\nMrs. Embury."
+    },
+    {
+        "name": "Dahlia",
+        "meaning": "Elegance and dignity",
+        "quote": "And a cloudless eye to see\u2014\nAnd a thirst for beautiful human thought,\nThat first was stirred by thee?\nWillis."
+    },
+    {
+        "name": "Daisy",
+        "meaning": "Innocence",
+        "quote": "I cannot look upon a star,\nOr cloud that seems a seraph\u2019s car,\nOr any form of purity\u2014\nUnmingled with a dream of thee.\nP. Benjamin."
+    },
+    {
+        "name": "Dandelion",
+        "meaning": "The rustic oracle",
+        "quote": "Thus doth my spirit turn to thee,\nMy guiding star o\u2019er life\u2019s wild sea.\nMrs. Embury."
+    },
+    {
+        "name": "Dead Leaves",
+        "meaning": "Death",
+        "quote": "In gloomy gowns the stars this loss deplore,\nThe sea with murmuring mountains beats the shore.\nDrummond."
+    },
+    {
+        "name": "Dew Plant",
+        "meaning": "Serenade",
+        "quote": "The voice-like angel of the spring\nUtters his soft vows\nTo the proud rose blossoming.\nBarry Cornwall."
+    },
+    {
+        "name": "Dragon Plant",
+        "meaning": "You are near a snare",
+        "quote": "Through every change. Yet, make me not a traitor!\nLet me save thee\u2014but spare my honour!\nByron."
+    },
+    {
+        "name": "Dyer\u2019s Weed",
+        "meaning": "Relief",
+        "quote": "A gentle peace, like evening winds\nIn summer from the ocean\u2019s breast,\nMoved o\u2019er my sighing, sinking soul,\nAnd soothed my murmuring griefs\nMacKellar."
+    },
+    {
+        "name": "Fennel",
+        "meaning": "Strength",
+        "quote": "Know how sublime a thing it is,\nTo suffer and grow strong.\nLongfellow."
+    },
+    {
+        "name": "Fir",
+        "meaning": "Time",
+        "quote": "Thy pleasures stay not till they pall,\nAnd all thy pains are quickly past.\nBryant."
+    },
+    {
+        "name": "Forget Me Not",
+        "meaning": "Never forget me",
+        "quote": "So will I mourn, by all above me,\nIf in this world I cease to love thee!\nMiller."
+    },
+    {
+        "name": "Grass",
+        "meaning": "Submission",
+        "quote": "And I will stoop and humble my intents\nTo your well practised, wise directions.\nShakspeare."
+    },
+    {
+        "name": "Hawthorn",
+        "meaning": "Hope",
+        "quote": "And Hawthorn\u2019s early blooms appear,\nLike youthful hope upon life\u2019s year.\nDrayton."
+    },
+    {
+        "name": "Hazel",
+        "meaning": "Peace and reconciliation",
+        "quote": "Peace, sweet peace is ever found\nIn her eternal home on holy ground.\nMrs. Embury."
+    },
+    {
+        "name": "Heliotrope",
+        "meaning": "Devoted affection",
+        "quote": "Along life\u2019s troubled sea;\u2014\nWhatever fate betides me,\nThis heart still turns to thee.\nG. P. Morris."
+    },
+    {
+        "name": "Holly",
+        "meaning": "Foresight",
+        "quote": "Walk\nBoldly and wisely in that light thou hast;\nThere is a hand above will help thee on.\nBailey."
+    },
+    {
+        "name": "Hollyhock",
+        "meaning": "Ambition",
+        "quote": "Press on! for it is godlike to unloose\nThe spirit, and forget yourself in thought.\nWillis."
+    },
+    {
+        "name": "Hyacinth",
+        "meaning": "Constancy",
+        "quote": "Then come the wild weather, come sleet, or come snow,\nWe will stand by each other however it blow.\nLongfellow."
+    },
+    {
+        "name": "Ice-Plant",
+        "meaning": "Frigidity",
+        "quote": "Your coldness and disdain\nDoes the sweet course restrain.\nCowley."
+    },
+    {
+        "name": "Ivy",
+        "meaning": "Constancy",
+        "quote": "When all things have their trial, you shall find\nNothing is constant but a virtuous mind.\nShirley."
+    },
+    {
+        "name": "Jasmine",
+        "meaning": "Amiability",
+        "quote": "Far, far away, across the foam:\nThe very Jasmine-flower that crept\nRound the thatched roof about his home,\nWhere she he loved then safely slept.\nMiller."
+    },
+    {
+        "name": "Juniper",
+        "meaning": "Protection",
+        "quote": "I loved her the more, when I heard\nSuch tenderness fall from her tongue.\nShenstone."
+    },
+    {
+        "name": "Lady\u2019s Slipper",
+        "meaning": "Capricious Beauty",
+        "quote": "Dazzled and drunk with beauty, till the heart\nReels with its fulness.\nByron."
+    },
+    {
+        "name": "Larkspur",
+        "meaning": "Flights of fancy",
+        "quote": "Ever, the melody of nature\u2019s voice,\nAnd see all lovely visions that she will.\nMrs. Osgood."
+    },
+    {
+        "name": "Laurel",
+        "meaning": "Glory",
+        "quote": "But come with the glory of human mind,\nAnd the light of the scholar\u2019s brow,\nAnd my heart shall be taught forgetfulness,\nAnd alone at thy altar bow.\nWillis."
+    },
+    {
+        "name": "Lavender",
+        "meaning": "Distrust",
+        "quote": "Our doubts are traitors,\nAnd make us lose the good we oft might win,\nBy fearing to attempt.\nShakspeare."
+    },
+    {
+        "name": "Lichen",
+        "meaning": "Solitude",
+        "quote": "No heavenly word or sound approacheth near\nAnd music\u2019s melting influence in lasting stillness sleeps.\nMacKellar."
+    },
+    {
+        "name": "Lilac",
+        "meaning": "First emotions of love",
+        "quote": "All that it yet had felt of earthly pleasure;\nNor thought that any love again might be\nSo deep and strong, as that I felt for thee.\nMrs. Norton."
+    },
+    {
+        "name": "Lily",
+        "meaning": "Majesty",
+        "quote": "Till the fiery star, which is in its eye,\nGazed through clear dew on the tender sky.\nShelley."
+    },
+    {
+        "name": "Lily of the Valley",
+        "meaning": "Modesty",
+        "quote": "It smiled like a star in a misty gloom,\nAnd it sent abroad a soft perfume,\nWhich is floating around me still.\nPercival."
+    },
+    {
+        "name": "Love-Lies-Bleeding",
+        "meaning": "Deserted Love",
+        "quote": "And an unquiet drooping of the eye,\nAs if its lid were charged with unshed tears.\nByron."
+    },
+    {
+        "name": "Marigold",
+        "meaning": "Grief",
+        "quote": "Love\u2019s flowers have dropped from off love\u2019s chain,\nEnough to say that they are gone,\nAnd that they cannot bloom again.\nMiss Landon."
+    },
+    {
+        "name": "Marvel of Peru",
+        "meaning": "Timidity",
+        "quote": "He saw her charming, but he saw not half\nThe charms her downcast modesty concealed.\nThomson."
+    },
+    {
+        "name": "Meadow Saffron",
+        "meaning": "My best days are past",
+        "quote": "Upon my head when I am gray,\nLove yet may search my fading eye\nBryant."
+    },
+    {
+        "name": "Mezereon",
+        "meaning": "desire to please",
+        "quote": "Thy sweets, thy graces, all are mine;\nThou art my star, shin\u2019st in my skies!\nThomas Carew."
+    },
+    {
+        "name": "Mignonette",
+        "meaning": "Your qualities surpass your charms",
+        "quote": "Types of the beauty that, when youth is gone, Breathes from the\nsoul whose brightness mocks decline.\nGeorge Hill."
+    },
+    {
+        "name": "Mistletoe",
+        "meaning": "I climb to greatness",
+        "quote": "He then unto the ladder turns his back,\nLooks in the clouds, scorning the base degrees\nBy which he did ascend.\nShakspeare."
+    },
+    {
+        "name": "Moss",
+        "meaning": "Maternal Love",
+        "quote": "There is none\nIn all this cold and hollow world, no fount\nOf deep, strong, deathless love, save that within\nA mother\u2019s heart.\nMrs. Hemans."
+    },
+    {
+        "name": "Moss Rose",
+        "meaning": "Confession of love",
+        "quote": "Then take my flower, and let its leaves\nBeside thy heart be cherished near,\nWhile that confiding heart receives\nThe thought it whispers to thine ear.\nToken, 1830."
+    },
+    {
+        "name": "Myrtle",
+        "meaning": "Love",
+        "quote": "Our love came as the early dew\nComes unto drooping flowers;\nDropping its first sweet freshness on\nOur life\u2019s dull, lonely hours.\nMrs. R. S. Nichols."
+    },
+    {
+        "name": "Narcissus and Daffodil",
+        "meaning": "Self-Love",
+        "quote": "They flash upon that inward eye\nWhich is the bliss of solitude.\nAnd then my heart with pleasure fills,\nAnd dances with the Daffodils.\nWordsworth."
+    },
+    {
+        "name": "Nasturtion",
+        "meaning": "patriotism",
+        "quote": "Pride in the gift of country and of name\nSpeaks in the eye and step\u2014\nHe treads his native land!\nHalleck."
+    },
+    {
+        "name": "Nettles",
+        "meaning": "Cruelty",
+        "quote": "The weight of scorn, where heavy misery\nToo much already weighs men\u2019s fortunes down.\nDaniel."
+    },
+    {
+        "name": "Nightshade",
+        "meaning": "Truth",
+        "quote": "Though mists and clouds may long obscure its face,\nGaze with patience, and ere long they\u2019ll pass.\nPeerbold."
+    },
+    {
+        "name": "Oak",
+        "meaning": "Nobility",
+        "quote": "Hence man\u2019s best riches must be gained\u2014not given;\nHis noblest name deserved, and not derived.\nMrs. Hale."
+    },
+    {
+        "name": "Oak Geranium",
+        "meaning": "Friendship",
+        "quote": "The friend\nWho smiles when smoothing down the lonely couch,\nAnd does kind deeds, which any one can do\nWho has a feeling spirit,\u2014such a friend\nHeals with a searching balsam.\nPercival."
+    },
+    {
+        "name": "Orchis",
+        "meaning": "A Belle",
+        "quote": "No wonder that eye is so richly resplendent,\nFor your heart is a rose and your soul is a star.\nMrs. Osgood."
+    },
+    {
+        "name": "Pansy",
+        "meaning": "Think of me",
+        "quote": "I think of thee at morn, when glisten\nThe tearful dew-drops on the grass;\nI think of thee at eve, and listen,\nWhen the low, whispering breezes pass.\nE. R. H."
+    },
+    {
+        "name": "Passion Flower",
+        "meaning": "Faith",
+        "quote": "I freely own its spirit-touching claim,\nWith thoughts and feelings it may well impart.\nBarton."
+    },
+    {
+        "name": "Peony",
+        "meaning": "Anger",
+        "quote": "The ocean, lashed to fury loud,\nIts high wave mingling with the cloud,\nIs peaceful, sweet serenity,\nTo anger\u2019s dark and stormy sea.\nJ. W. Eastburne."
+    },
+    {
+        "name": "Periwinkle",
+        "meaning": "The weather-glass",
+        "quote": "A dead flower\nWill long be kept, remembrancer of looks\nThat made each leaf a treasure.\nMiss Landon."
+    },
+    {
+        "name": "Pine",
+        "meaning": "Pity",
+        "quote": "Naught is there under Heaven\u2019s wide hollowness\nThat moves more dear compassion of the mind\nThan beauty brought to unworthy wretchedness\nSpenser."
+    },
+    {
+        "name": "Pink",
+        "meaning": "Pure Love",
+        "quote": "I have no hope that does not dream for thee;\nI have no joy that is not shared by thee;\nI have no fear that does not dread for thee.\nL. E. L."
+    },
+    {
+        "name": "Poppy",
+        "meaning": "Consolation",
+        "quote": "Can love, when \u2019tis slighted, still cherish a token,\nOr hearts still forgive, that unkindness has broken?\nPercival."
+    },
+    {
+        "name": "Primrose",
+        "meaning": "Early Grief",
+        "quote": "I\u2019ll sweeten thy sad grave: thou shalt not lack\nThe flower that\u2019s like thy face, pale Primrose.\nCymbeline."
+    },
+    {
+        "name": "Red Rose",
+        "meaning": "Beauty and love",
+        "quote": "And I know what \u2019tis to love\nA spiritual beauty, and behind the foil\nOf an unblemished loveliness, still find\nCharms of a higher order, and a power\nDeeper and more resistless.\nPercival."
+    },
+    {
+        "name": "Reed",
+        "meaning": "Single Blessedness",
+        "quote": "My heart is with its early dream,\nAnd vainly love\u2019s soft power\nWould seek to charm that heart anew,\nIn some unguarded hour.\nMrs. Embury."
+    },
+    {
+        "name": "Rosemary",
+        "meaning": "Rememberance",
+        "quote": "But when the falling leaf is sere,\nAnd withers sadly from the tree,\nAnd o\u2019er the ruins of the year\nCold autumn weeps,\u2014remember me.\nEdward Everett."
+    },
+    {
+        "name": "Sage",
+        "meaning": "Domestic virtues",
+        "quote": "The first sure symptoms of a mind in health,\nIs rest of heart, and pleasure felt at home.\nYoung."
+    },
+    {
+        "name": "Scarlet Geranium",
+        "meaning": "Stupidity",
+        "quote": "This fellow is wise enough to play the fool;\nAnd to do that well, craves a kind of wit.\nShakspeare."
+    },
+    {
+        "name": "Snowdrop",
+        "meaning": "Hope",
+        "quote": "The star of Hope will beam in Sorrow\u2019s night,\nAnd smile the phantoms of Despair to flight.\nAnon."
+    },
+    {
+        "name": "Starwort",
+        "meaning": "Welcome",
+        "quote": "A race in its freshness and bloom are we;\nBring no cares from a worn-out world with thee.\nMrs. Sigourney."
+    },
+    {
+        "name": "St. John\u2019s Wort",
+        "meaning": "Superstition",
+        "quote": "Matrons, who toss the cup, and see\nThe grounds of fate in grounds of tea.\nChurchill."
+    },
+    {
+        "name": "Stock",
+        "meaning": "Lasting Beauty",
+        "quote": "Beauty has gone; but yet her mind is still\nAs beautiful as ever; still the play\nOf light around her lips has every charm\nOf childhood in its freshness.\nPercival."
+    },
+    {
+        "name": "Strawberry",
+        "meaning": "Perfection",
+        "quote": "And, more than all, a gift of thought\nTo such a spirit fineness wrought,\nThat on my ear her language fell\nAs if each word dissolved a spell.\nWillis"
+    },
+    {
+        "name": "Sweet-Brier",
+        "meaning": "Poetry",
+        "quote": "If ever from his lyre\u2019s proud strings\nFlow sounds, like rush of angel wings,\n\u2019Tis that she listens, while he sings,\nWith blended smiles and tears.\nHalleck."
+    },
+    {
+        "name": "Sweet-Flag",
+        "meaning": "Grace",
+        "quote": "And e\u2019en those little things can bring\nBefore me, passing well,\nThe very nook where the scented leaves\nOf the graceful calamus dwell.\nLouisa A. Twamley."
+    },
+    {
+        "name": "Sunflower",
+        "meaning": "False Riches",
+        "quote": "How thirsts the yearning soul for something more,\nSome good that lies beyond its keenest ken!\nMacKellar."
+    },
+    {
+        "name": "Thorn-Apple",
+        "meaning": "Deceitful Charms",
+        "quote": "Ah, that deceit should steal such gentle shapes,\nAnd with a virtuous visor hide deep vice!\nShakspeare."
+    },
+    {
+        "name": "Thyme",
+        "meaning": "Activity",
+        "quote": "Start into instant action, and at once\nPlans and performs, resolves and executes.\nHannah More."
+    },
+    {
+        "name": "Tuberose",
+        "meaning": "Dangerous Love",
+        "quote": "So like a bride, scented and bright,\nShe comes out when the sun\u2019s away.\nMoore."
+    },
+    {
+        "name": "Tulip",
+        "meaning": "Declaration of love",
+        "quote": "My heart is sad and lonely,\nWith weariness I pine;\nWould thou wert here, mine only,\u2014\nWould I were wholly thine!\nH. J. H"
+    },
+    {
+        "name": "Valerian",
+        "meaning": "An accomodating disposition",
+        "quote": "My country, sir, is not a single spot\nOf such a mould, or fixed to such a clime.\nMiller."
+    },
+    {
+        "name": "Vervain",
+        "meaning": "Enchantment",
+        "quote": "Not all the charms that superstition gave\nTo plants in lonely forests found,\nCould work such magic in Love\u2019s doting slave,\nAs the voice which his wishes crowned.\nAnon."
+    },
+    {
+        "name": "Violet",
+        "meaning": "Modest Worth",
+        "quote": "Will bless old Time, who left behind\nThe graces of a virtuous mind.\nPaulding."
+    },
+    {
+        "name": "Wall-Flower",
+        "meaning": "Fidelity in adversity",
+        "quote": "An emblem true thou art\nOf love\u2019s enduring lustre given\nTo cheer a lonely heart.\nBarton."
+    },
+    {
+        "name": "White Water-Lily",
+        "meaning": "Purity",
+        "quote": "Gazing about in sweet amazement,\nThy image, from the vine-clad casement,\nSeems looking out, my love, on me.\nMiller."
+    },
+    {
+        "name": "Woodbine, or Honeysuckle",
+        "meaning": "Affection",
+        "quote": "Ah! could you look into my heart,\nAnd watch your image there!\nYou would own the sunny loveliness\nAffection makes it wear.\nMrs. Osgood."
+    }
+]
