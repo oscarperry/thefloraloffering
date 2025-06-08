@@ -18,6 +18,11 @@
                   --gold: #D9BB7D
             }
 
+            html,
+            body {
+                  width: 100vw;
+                  height: 100vh;
+            }
 
             body {
                   display: flex;
@@ -25,8 +30,8 @@
                   flex-direction: column;
                   align-items: center;
                   /* padding-top: 15px; */
-                  height: -webkit-fill-available;
                   min-height: 100vh;
+                  min-height: -webkit-fill-available;
                   background-image: url("background.jpg");
                   background-size: 100vw 100dvh;
                   background-attachment: fixed;
@@ -244,21 +249,7 @@
             window.location.href = "?id=" + document.getElementById("flowerName").innerHTML;
       })
 
-      window.addEventListener('resize', function() {
 
-        if ( window.matchMedia("(orientation: portrait)").matches ) {
-
-            document.getElementsByTagName("html")[0].style.height = "100vh";
-
-            setTimeout(function(){
-
-                document.getElementsByTagName("html")[0].style.height = "100%";
-
-            }, 500);
-
-        }
-
-    });
 </script>
 
 </HTML>
