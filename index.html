@@ -60,7 +60,7 @@
                   overflow: hidden;
 
             }
-            
+
             .logoContainer img {
                   height: 400px;
                   opacity: 0.6;
@@ -80,7 +80,7 @@
             #imageContainer {
                   visibility: collapse;
                   max-width: 80%;
-                   margin-bottom: 30px;
+                  margin-bottom: 30px;
             }
 
             label {
@@ -134,11 +134,16 @@
             </div>
             <button id="ShareButton">Share</button>
       </div>
-      <div id="introText" class="container intro"  style="background-color: #013578;">
+      <div id="introText" class="container intro" style="background-color: #013578;">
             <div class="container">
-            Why do flowers enter and shed their perfume over every scene of life, from the cradle to the grave?<br>
-In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual blooms, each adorned with their own meaning and tender verse. Much like Johnnie Walker Blue Label is to be savoured in moments of joy or reflection, flowers provide omnipotent grace to every season of the heart. Now digitised and indexed, they are yours to share-with kindred spirits or distant souls-whenever words fall short.
-                  </div>
+                  Why do flowers enter and shed their perfume over every scene of life, from the cradle to the
+                  grave?<br>
+                  In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual blooms, each adorned
+                  with their own meaning and tender verse. Much like Johnnie Walker Blue Label is to be savoured in
+                  moments of joy or reflection, flowers provide omnipotent grace to every season of the heart. Now
+                  digitised and indexed, they are yours to share-with kindred spirits or distant souls-whenever words
+                  fall short.
+            </div>
             <div>
                   <label for="flowers">Choose a flower:</label>
                   <select name="flowers" id="flowers"></select>
@@ -184,10 +189,10 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
       function getFlowerDataByName(name) {
             let data;
             JSON.forEach((flower, index) => {
-                  if (flower.name == name){
+                  if (flower.name == name) {
                         data = flower;
-                        data["index"] = index+1;
-                        currentIndex = index+1;
+                        data["index"] = index + 1;
+                        currentIndex = index + 1;
                         console.log(index)
                   }
 
@@ -201,7 +206,7 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
                   return false
             console.log(name)
             document.getElementById("imageContainer").style.visibility = "visible";
-            document.getElementById("flowerImage").src = "images/"+f.index+".png";
+            document.getElementById("flowerImage").src = "images/" + f.index + ".png";
             // document.getElementById("flowerName").innerHTML = f.name;
             // document.getElementById("flowerMeaning").innerHTML = f.meaning;
             // document.getElementById("flowerQuote").innerHTML = f.quote.replace(/(\r\n|\n|\r)/gm, "<br>");
@@ -212,7 +217,7 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
       function selectFlower() {
             const value = this.value
             console.log(this.value)
-            if(selectFlowerByName(value)){
+            if (selectFlowerByName(value)) {
                   currentFlower = value
             }
       }
@@ -221,15 +226,18 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
       window.addEventListener("load", loadJSON)
       document.getElementById("flowers").onchange = selectFlower;
       document.getElementById("ShareButton").addEventListener('click', async () => {
-            if (navigator.share) {
+
+            let blob = await (await fetch(document.getElementById("flowerImage").src)).blob;
+            let file = new File([blob], 'img.png', { type: blob.type })
+
+            if (navigator.share && navigator.canShare(file)) {
                   try {
-                        let blob = await (await fetch(document.getElementById("flowerImage").src)).blob;
-                        let file = File.new([blob], 'img.png', {type: blob.type}) 
-                        await navigator.share({ 
-                              url: "https://ryan-esdale.github.io/floriography/?id="+currentFlower, 
-                              text: "Johnny Walker's Ble Label Floriography:  "+currentFlower, 
+
+                        await navigator.share({
+                              url: "https://ryan-esdale.github.io/floriography/?id=" + currentFlower,
+                              text: "Johnny Walker's Ble Label Floriography:  " + currentFlower,
                               title: "Floriography",
-                              files: [file]                              
+                              files: [file]
                         });
                   } catch (err) {
                         alert(err)
