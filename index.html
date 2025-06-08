@@ -26,7 +26,8 @@
                   align-items: center;
                   padding-top: 15px;
                   background-image: url("background.jpg");
-                  background-size: 100%;
+                  background-size: 100vw 100vh;
+                  background-attachment: fixed;
                   background-repeat: no-repeat;
                   font-size: 18pt;
                   font-family: Arial, Helvetica, sans-serif;
@@ -50,6 +51,7 @@
                   max-width: 80%;
                   margin-bottom: 20px;
                   text-align: center;
+                  font-size: 24pt;
             }
 
             .logoContainer {
@@ -76,8 +78,9 @@
             }
 
             #imageContainer {
-                  visibility: hidden;
+                  visibility: collapse;
                   max-width: 80%;
+                   margin-bottom: 30px;
             }
 
             label {
@@ -103,7 +106,7 @@
                   padding: 5px 10px;
                   border-radius: 8px;
                   border-width: 2px;
-                  font-size: 16pt;
+                  font-size: 20pt;
                   background-color: var(--blue);
                   border-color: var(--gold);
                   border-radius: 20px;
@@ -124,8 +127,13 @@
             <h1>Floriography</h1>
       </div>
 
-
       <!-- <div class="logoContainer"><img src="JohnnieWalker_White.png"></div> -->
+      <div id="imageContainer" class="container" style="background-color: #013578;">
+            <div style=" display: flex; flex-direction: column; align-items: center; max-width: 90%;">
+                  <img id="flowerImage" src="WC JW Blank Frame.png" width="100%">
+            </div>
+            <button id="ShareButton">Share</button>
+      </div>
       <div id="introText" class="container intro"  style="background-color: #013578;">
             <div class="container">
             Why do flowers enter and shed their perfume over every scene of life, from the cradle to the grave?<br>
@@ -136,25 +144,6 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
                   <select name="flowers" id="flowers"></select>
             </div>
       </div>
-      <div id="imageContainer" class="container" style="background-color: #013578;">
-            <div style=" display: flex; flex-direction: row; ">
-                  <img id="flowerImage" src="WC JW Blank Frame.png" height="400px">
-                  <!-- <div style="padding-left: 15px;">
-                        <h2 id="flowerName">
-                              Acacia
-                        </h2>
-                        <div id="flowerMeaning">Friendship</div><br>
-                        <div id="flowerQuote">
-                              Old friends, like old swords, still are trusted best.<br>Webster.
-                        </div>
-                  </div> -->
-            </div>
-            <!-- <div>
-                  <label for="flowers">Choose another flower:</label>
-                  <select name="flowers" id="flowers"></select>
-            </div> -->
-            <button id="ShareButton">Share</button>
-      </div>
 </body>
 
 <script type="text/javascript">
@@ -162,6 +151,7 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
       const urlID = new URLSearchParams(window.location.search).get('id')
       let JSON = {};
       let currentFlower = "";
+      let currentIndex = 0;
 
       function loadJSON() {
             fetch('./floriography_data.json')
@@ -182,8 +172,6 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
                         });
                         // selectFlower(data[Math.floor(1 + Math.random() * data.length)].name)
                         if (urlID && selectFlowerByName(urlID)) {
-                              // console.log(urlID)
-
                               currentFlower = urlID;
                               flowerSelect.value = urlID;
                         }
@@ -199,6 +187,7 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
                   if (flower.name == name){
                         data = flower;
                         data["index"] = index+1;
+                        currentIndex = index+1;
                         console.log(index)
                   }
 
@@ -216,8 +205,8 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
             // document.getElementById("flowerName").innerHTML = f.name;
             // document.getElementById("flowerMeaning").innerHTML = f.meaning;
             // document.getElementById("flowerQuote").innerHTML = f.quote.replace(/(\r\n|\n|\r)/gm, "<br>");
-            return true;
             // window.location.href = "?id=" + f.name
+            return true;
       }
 
       function selectFlower() {
@@ -234,7 +223,14 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
       document.getElementById("ShareButton").addEventListener('click', async () => {
             if (navigator.share) {
                   try {
-                        await navigator.share({ url: "https://ryan-esdale.github.io/floriography/", text: "Test Text", title: "Floriography" });
+                        let blob = await (await fetch(document.getElementById("flowerImage").src)).blob;
+                        let file = File.new([blob], 'img.png', {type: blob.type}) 
+                        await navigator.share({ 
+                              url: "https://ryan-esdale.github.io/floriography/?id="+currentFlower, 
+                              text: "Johnny Walker's Ble Label Floriography:  "+currentFlower, 
+                              title: "Floriography",
+                              files: [file]                              
+                        });
                   } catch (err) {
                         alert(err)
                         console.error('Error sharing content:', err);
@@ -242,7 +238,7 @@ In 1851, Henrietta Dumont unveiled The Floral Offering-a novel of 100 individual
             } else {
                   // Fallback for browsers that do not support the Web Share API
                   alert('Sharing is not supported on this device. Link copied to clipboard.');
-                  navigator.clipboard.writeText("https://ryan-esdale.github.io/floriography?id=" + document.getElementById("flowerName").innerHTML);
+                  navigator.clipboard.writeText("https://ryan-esdale.github.io/floriography?id=" + currentFlower);
             }
             window.location.href = "?id=" + document.getElementById("flowerName").innerHTML;
       })
