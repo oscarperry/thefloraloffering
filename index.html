@@ -18,13 +18,22 @@
                   --gold: #D9BB7D
             }
 
-            html,
-            body {
+            html {
                   width: 100vw;
                   height: 100vh;
+                  padding: 0;
+                  margin: 0;
+                  background-image: url("background.jpg");
+                  background-size: 100vw 100dvh;
+                  background-attachment: fixed;
+                  background-repeat: no-repeat;
             }
 
             body {
+                  width: 100vw;
+                  height: 100vh;
+                  padding: 0;
+                  margin: 0;
                   display: flex;
                   flex: 1;
                   flex-direction: column;
@@ -32,10 +41,7 @@
                   /* padding-top: 15px; */
                   min-height: 100vh;
                   min-height: -webkit-fill-available;
-                  background-image: url("background.jpg");
-                  background-size: 100vw 100dvh;
-                  background-attachment: fixed;
-                  background-repeat: no-repeat;
+                  
                   font-size: 18pt;
                   font-family: Arial, Helvetica, sans-serif;
             }
