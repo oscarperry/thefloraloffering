@@ -81,6 +81,7 @@
                   display: none;
                   max-width: 80%;
                   margin-bottom: 30px;
+                  align-items: center;
             }
 
             label {
@@ -200,7 +201,7 @@
             const f = getFlowerDataByName(name)
             if (!f)
                   return false
-            document.getElementById("imageContainer").style.display = "inline";
+            document.getElementById("imageContainer").style.display = "flex";
             document.getElementById("flowerImage").src = "images/" + f.index + ".png";
             return true;
       }
