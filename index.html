@@ -227,9 +227,17 @@
       document.getElementById("flowers").onchange = selectFlower;
       document.getElementById("ShareButton").addEventListener('click', async () => {
 
-            let blob = await (await fetch(document.getElementById("flowerImage").src)).blob;
-            let file = new File([blob], 'img.png', { type: "image/png", lastModified: Date.now() })
-            console.log(file.type)
+            let blob = await fetch(document.getElementById("flowerImage").src).then(r=>r.blob());
+            let file = new File([blob], 'img.png', { type: blob.type, lastModified: Date.now() })
+
+            // const fileURL = URL.createObjectURL(file);
+            // const downloadLink = document.createElement('a');
+            // downloadLink.href = fileURL;
+            // downloadLink.download = 'example.png';
+            // document.body.appendChild(downloadLink);
+            // downloadLink.click();
+
+
             if (navigator.share && navigator.canShare(file)) {
                   try {
 
