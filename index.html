@@ -243,6 +243,22 @@
             }
             window.location.href = "?id=" + document.getElementById("flowerName").innerHTML;
       })
+
+      window.addEventListener('resize', function() {
+
+        if ( window.matchMedia("(orientation: portrait)").matches ) {
+
+            document.getElementsByTagName("html")[0].style.height = "100vh";
+
+            setTimeout(function(){
+
+                document.getElementsByTagName("html")[0].style.height = "100%";
+
+            }, 500);
+
+        }
+
+    });
 </script>
 
 </HTML>
