@@ -78,7 +78,7 @@
             }
 
             #imageContainer {
-                  visibility: collapse;
+                  display: none;
                   max-width: 80%;
                   margin-bottom: 30px;
             }
@@ -156,7 +156,6 @@
       const urlID = new URLSearchParams(window.location.search).get('id')
       let JSON = {};
       let currentFlower = "";
-      let currentIndex = 0;
 
       function loadJSON() {
             fetch('./floriography_data.json')
@@ -175,7 +174,6 @@
                               child.innerText = element.name;
                               flowerSelect.append(child)
                         });
-                        // selectFlower(data[Math.floor(1 + Math.random() * data.length)].name)
                         if (urlID && selectFlowerByName(urlID)) {
                               currentFlower = urlID;
                               flowerSelect.value = urlID;
@@ -192,8 +190,6 @@
                   if (flower.name == name) {
                         data = flower;
                         data["index"] = index + 1;
-                        currentIndex = index + 1;
-                        console.log(index)
                   }
 
             })
@@ -204,19 +200,13 @@
             const f = getFlowerDataByName(name)
             if (!f)
                   return false
-            console.log(name)
-            document.getElementById("imageContainer").style.visibility = "visible";
+            document.getElementById("imageContainer").style.display = "inline";
             document.getElementById("flowerImage").src = "images/" + f.index + ".png";
-            // document.getElementById("flowerName").innerHTML = f.name;
-            // document.getElementById("flowerMeaning").innerHTML = f.meaning;
-            // document.getElementById("flowerQuote").innerHTML = f.quote.replace(/(\r\n|\n|\r)/gm, "<br>");
-            // window.location.href = "?id=" + f.name
             return true;
       }
 
       function selectFlower() {
             const value = this.value
-            console.log(this.value)
             if (selectFlowerByName(value)) {
                   currentFlower = value
             }
@@ -227,16 +217,8 @@
       document.getElementById("flowers").onchange = selectFlower;
       document.getElementById("ShareButton").addEventListener('click', async () => {
 
-            let blob = await fetch(document.getElementById("flowerImage").src).then(r=>r.blob());
+            let blob = await fetch(document.getElementById("flowerImage").src).then(r => r.blob());
             let file = new File([blob], 'img.png', { type: blob.type, lastModified: Date.now() })
-
-            // const fileURL = URL.createObjectURL(file);
-            // const downloadLink = document.createElement('a');
-            // downloadLink.href = fileURL;
-            // downloadLink.download = 'example.png';
-            // document.body.appendChild(downloadLink);
-            // downloadLink.click();
-
 
             if (navigator.share && navigator.canShare(file)) {
                   try {
