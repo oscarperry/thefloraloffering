@@ -228,8 +228,8 @@
       document.getElementById("ShareButton").addEventListener('click', async () => {
 
             let blob = await (await fetch(document.getElementById("flowerImage").src)).blob;
-            let file = new File([blob], 'img.png', { type: blob.type })
-
+            let file = new File([blob], 'img.png', { type: "image/png", lastModified: Date.now() })
+            console.log(file.type)
             if (navigator.share && navigator.canShare(file)) {
                   try {
 
