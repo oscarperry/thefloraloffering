@@ -216,7 +216,7 @@
                   try {
 
                         await navigator.share({
-                              url: "https://oscarperry.github.io/floriography/?id=" + currentFlower,
+                              url: "https://oscarperry.github.io/thefloraloffering?id=" + currentFlower,
                               text: "Johnnie Walker Blue Label, The Floral Offering:  " + currentFlower,
                               title: "The Floral Offering",
                               files: [file]
@@ -228,7 +228,7 @@
             } else {
                   // Fallback for browsers that do not support the Web Share API
                   alert('Sharing is not supported on this device. Link copied to clipboard.');
-                  navigator.clipboard.writeText("https://oscarperry.github.io/floriography?id=" + currentFlower);
+                  navigator.clipboard.writeText("https://oscarperry.github.io/thefloraloffering?id=" + currentFlower);
             }
             window.location.href = "?id=" + document.getElementById("flowerName").innerHTML;
       })
